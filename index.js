@@ -43,3 +43,34 @@ const funcTwo = () => {
     return "function Two succeeded";
 }
 console.log(funcTwo());
+
+let data = [
+    10,
+    2,
+    15,
+    28,
+    10
+]
+
+ const modifiedData = data.map((element) => {
+    if (element === 2) {
+        element = 12
+    }
+    return element
+} )
+console.log(modifiedData)
+
+const filteredData = data.filter((element) => {
+    if (element <= 15) {
+        return element
+    }
+})
+//console.log(filteredData)
+
+const foundElement = data.find((element) => {
+    if (element === 10) {
+        return element
+    }
+})
+//console.log(foundElement)
+
